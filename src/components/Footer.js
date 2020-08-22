@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { fab } from "@fortawesome/free-solid-svg-icons";
 
 export default function Footer() {
   const footerStyle = {
@@ -6,7 +8,7 @@ export default function Footer() {
   };
   return (
     <div className="row" style={footerStyle}>
-      <div></div>
+      <div className="col-1"></div>
       <div className="col-2">
         <p>
           <strong>advalyze GmbH</strong>
@@ -52,12 +54,39 @@ export default function Footer() {
       </div>
 
       <div className="col-2">
-        <p>
-          <strong>advalyze GmbH</strong>
-        </p>
-        <p>Berliner Allee 26</p>
-        <p>13088 Berlin</p>
+        <a
+          href="https://www.linkedin.com/company/advalyze-gmbh/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa bg-light fa-linkedin-square"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/advalyze/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa bg-light fa-instagram"></i>
+        </a>
+
+        <a
+          href="https://www.facebook.com/advalyze/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa bg-light fa-facebook-square"></i>
+        </a>
+
+        <a
+          href="https://www.xing.com/companies/advalyzegmbh/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa bg-light fa-xing-square"></i>
+        </a>
       </div>
+      <div className="col-1"></div>
     </div>
   );
 }
