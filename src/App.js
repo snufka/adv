@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import ContactPopUp from "./components/ContactPopUp";
 import Clients from "./components/Clients";
+import Why from "./components/Why";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Services />
       <Clients />
       <SieMatic />
+      <Why />
       <Contact />
       <ContactPopUp />
       <Footer />

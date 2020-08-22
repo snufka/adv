@@ -2,7 +2,7 @@ import React from "react";
 
 export default function clients() {
   const clientLogo = {
-    maxWidth: "150px",
+    maxidth: "150px",
   };
   return (
     <div style={{ textAlign: "center" }}>
