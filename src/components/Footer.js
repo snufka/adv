@@ -1,14 +1,13 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fab } from "@fortawesome/free-solid-svg-icons";
 
 export default function Footer() {
   const footerStyle = {
-    padding: "40px",
+    padding: "60px",
+    backgroundColor: "#dcdcdc",
   };
   return (
     <div className="row" style={footerStyle}>
-      <div className="col-1"></div>
+      <div className="col-2"></div>
       <div className="col-2">
         <p>
           <strong>advalyze GmbH</strong>
