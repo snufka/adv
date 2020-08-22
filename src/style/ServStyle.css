@@ -1,0 +1,22 @@
+.growthMarketingImg:before {
+    content: '';
+    background: url(//www.advalyze.com/wp-content/themes/advalyze/assets/css/../icon/01-growth-marketing.svg) no-repeat;
+    width: 150px;
+    height: 200px;
+    background-size: 150px 200px;
+    position: absolute;
+    left: -80px;
+    top: -20px;
+}
+
+;
+.marTechImg:before {
+    content: '';
+    background: url(//www.advalyze.com/wp-content/themes/advalyze/assets/icon/02-mar-tech.svg) no-repeat;
+    width: 150px;
+    height: 200px;
+    background-size: 150px 200px;
+    position: absolute;
+    left: -95px;
+    top: 10px;
+}
