@@ -2,8 +2,9 @@ import React from "react";
 
 export default function ContactPopUp() {
   return (
-    <div>
-      <form className="col-md-6">
+    <div className="row">
+      <div className="col-md-3"></div>
+      <form className="col-md-6" style={{ justifyContent: "center" }}>
         <div className="form-group">
           <label for="exampleFormControlInput1">Name</label>
           <input
@@ -61,10 +62,15 @@ export default function ContactPopUp() {
             rows="3"
           ></textarea>
         </div>
+        <p>
+          * Our privacy policy applies . You can revoke your consent at any time
+          .
+        </p>
         <button type="submit" className="btn btn-secondary btn-lg">
           Send Message
         </button>
       </form>
+      <div className="col-md-3"></div>
     </div>
   );
 }
