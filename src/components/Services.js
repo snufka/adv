@@ -29,7 +29,7 @@ export default function Services() {
       <div className="row" style={{ justifyContent: "center" }}>
         <div className="col-4">
           <div className="growthMarketingImg"></div>
-          <h1>01</h1>
+          <h1 className="display-4">01</h1>
 
           <h4>Growth arketing</h4>
           <p className="lead">
@@ -46,9 +46,10 @@ export default function Services() {
           </p>
           <img src={plus} alt="plus"></img>
         </div>
+
         <div className="col-4" style={{ paddingTop: "40px" }}>
           <div className="marTechImg"></div>
-          <h1>02</h1>
+          <h1 className="display-4">02</h1>
 
           <h4>MarTech</h4>
           <p className="lead">

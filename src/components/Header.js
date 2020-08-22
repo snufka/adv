@@ -16,18 +16,18 @@ export default function Header() {
   };
   return (
     <div>
-      <div className="row" style={{ textAlign: "center" }}>
+      <div className="row">
         <div className="col"></div>
         <div className="col">
           <img src={Logo} alt="logo" style={logoStyle}></img>
         </div>
-        <div className="col-6">
+        <div className="col-6" style={{ textAlign: "center" }}>
           <NavBar />
           <h1 class="display-1">
             Your next<br></br> digital level.
           </h1>
-
-          <p>
+          <br></br>
+          <p className="lead">
             <strong>Growth marketing scales your business model.</strong>
           </p>
           <button type="button" className="btn btn-dark">
