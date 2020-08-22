@@ -40,7 +40,7 @@ export default function SieMatic() {
           <br></br>
           <img src={plus} alt="plus"></img>
         </div>
-        <div className="col-6">
+        <div className="col-6" style={{ backgroundColor: "#dcdcdc" }}>
           <img src={sieProject} alt="sieproject" className="siePImg"></img>
         </div>
       </div>

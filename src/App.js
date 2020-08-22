@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 import Services from "./components/Services";
 import SieMatic from "./components/SieMatic";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Services />
       <SieMatic />
+      <Footer />
     </div>
   );
 }
