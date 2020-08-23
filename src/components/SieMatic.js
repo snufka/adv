@@ -1,7 +1,6 @@
 import React from "react";
 import sieStyle from "../style/sieMatic.css";
 import sieProject from "../img/siematic-project.jpg";
-import plus from "../img/plus.JPG";
 
 export default function SieMatic() {
   return (
@@ -12,19 +11,31 @@ export default function SieMatic() {
           style={{
             backgroundColor: "#0068FF",
             textAlign: "center",
-            paddingTop: "40px",
             color: "white",
+            paddingTop: "60px",
           }}
         >
-          <h4>SieMatic</h4>
-          <div className="project">
-            <h2>Marketing automation</h2>
+          <div style={{ marginBottom: "30px" }}>
+            <img
+              src="https://www.advalyze.com/wp-content/uploads/2020/07/siematic-logo-white.svg"
+              alt="siematiclogowhote"
+            ></img>
           </div>
-          <h4>
+          <div className="project">
+            <h2
+              style={{
+                fontWeight: "300 !important",
+                fontSize: ".875rem",
+              }}
+            >
+              Marketing automation
+            </h2>
+          </div>
+          <h4 style={{ marginTop: "30px" }}>
             How SieMatic increased qualified <br></br>lead conversion to over
             10%
           </h4>
-          <p className="lead">
+          <p>
             As a result of our digital project, SieMatic is now positioning
             itself as a digital leader in the premium kitchen segment. By
             implementing a CRM with marketing automation and a digital marketing
@@ -38,7 +49,10 @@ export default function SieMatic() {
             specific studio visit.
           </p>
           <br></br>
-          <img src={plus} alt="plus"></img>
+          <img
+            src="https://www.advalyze.com/wp-content/uploads/2020/07/more-white.svg"
+            alt="plus"
+          ></img>
         </div>
         <div className="col-6" style={{ backgroundColor: "#dcdcdc" }}>
           <img src={sieProject} alt="sieproject" className="siePImg"></img>

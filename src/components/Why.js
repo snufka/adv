@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Why() {
   return (
-    <div style={{ textAlign: "center" }}>
+    <div style={{ textAlign: "center" }} className="padding">
       <div>
         <h1>Why Advalyze?</h1>
       </div>

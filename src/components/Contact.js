@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <div className="row" style={{ paddingTop: "60px", paddingBottom: "60px" }}>
+    <div className="row">
       <div className="col-6" style={{ textAlign: "center" }}>
         <img
           className="contactImg"

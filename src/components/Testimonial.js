@@ -15,16 +15,19 @@ export default function Testimonial() {
           Advalyze accompanies us from the first<br></br>
           Step into digitization ...
         </h2>
+        <br></br>
         <p>
           ... up to extensive measures to reach customers in the future via all
           current and digital contact <br></br>points. We really appreciate the
           knowledge transfer within the company. Thank you for the many<br></br>{" "}
           years of partnership and cooperation! «
         </p>
+        <br></br>
         <img
           src="https://www.advalyze.com/wp-content/uploads/2020/07/christian-hansen-siematic.png"
           alt="Christian Hansen"
           title="Advalyze customer SieMatic Christian Hansen"
+          style={{ width: "120px" }}
         />
         <p>Christian Hansen, CMO SieMatic</p>
       </div>

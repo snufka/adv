@@ -4,7 +4,6 @@ import Services from "./components/Services";
 import SieMatic from "./components/SieMatic";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
-import ContactPopUp from "./components/ContactPopUp";
 import Clients from "./components/Clients";
 import Why from "./components/Why";
 import Testimonial from "./components/Testimonial";
@@ -22,7 +21,6 @@ function App() {
       <Testimonial />
       <Experts />
       <Contact />
-      <ContactPopUp />
       <Footer />
     </div>
   );

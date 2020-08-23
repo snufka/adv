@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Experts() {
   return (
-    <div style={{ textAlign: "center" }}>
-      <div>
+    <div className="padding">
+      <div style={{ textAlign: "center" }}>
         <h1>
           Over 25 experts for your digital<br></br> success.
         </h1>
@@ -16,25 +16,28 @@ export default function Experts() {
         </p>
       </div>
       <div className="row">
+        <div className="col-2"></div>
         <div class="col-5">
           <img
             src="https://www.advalyze.com/wp-content/uploads/2020/07/office-02.jpg"
             alt="founders"
+            style={{ maxWidth: "100%", height: "auto", marginLeft: "15px" }}
           ></img>
-          <div class="col-4">
-            <img
-              src="https://www.advalyze.com/wp-content/uploads/2020/07/office-03.jpg"
-              alt="office"
-            ></img>
-          </div>
-          <div className="col-2">
-            <img
-              src="https://www.advalyze.com/wp-content/uploads/2020/07/office-01.jpg"
-              alt="office2"
-            />
-          </div>
+          <img
+            src="https://www.advalyze.com/wp-content/uploads/2020/07/office-01.jpg"
+            alt="office2"
+            style={{ maxWidth: "100%" }}
+          />
+        </div>
+        <div class="col-5" style={{ marginTop: "70px" }}>
+          <img
+            src="https://www.advalyze.com/wp-content/uploads/2020/07/office-03.jpg"
+            alt="office"
+            style={{ maxWidth: "100%", height: "auto" }}
+          ></img>
         </div>
       </div>
+      <div className="col-2"></div>
       <div className="row">
         <div className="bd-example col-4">
           <div
