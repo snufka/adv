@@ -7,7 +7,7 @@ export default function Why() {
         <h1>Why Advalyze?</h1>
       </div>
       <br></br>
-      <div className="row">
+      <div className="row" style={{ textAlign: "center" }}>
         <div className="col-3">
           <img
             src="https://www.advalyze.com/wp-content/uploads/2020/07/01-schema-f.svg"
@@ -22,7 +22,7 @@ export default function Why() {
             means that our solutions are both pragmatic and individual.
           </p>
         </div>
-
+        <div className="col-1"> </div>
         <div className="col-3">
           <img
             src="https://www.advalyze.com/wp-content/uploads/2020/07/02-partner-augenhoehe.svg"
@@ -38,7 +38,7 @@ export default function Why() {
             part of our work.
           </p>
         </div>
-
+        <div className="col-1"> </div>
         <div className="col-3">
           <img
             src="https://www.advalyze.com/wp-content/uploads/2020/07/02-no-bullshit.svg"

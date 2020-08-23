@@ -6,9 +6,11 @@ export default function clients() {
   };
   return (
     <div style={{ textAlign: "center" }}>
-      <h1>A selection of our customers:</h1>
+      <div>
+        <h1>A selection of our customers:</h1>
+      </div>
+      <br></br>
       <div className="row">
-        <div className="col-1"></div>
         <div className="col-3">
           <img
             className={clientLogo}
@@ -38,9 +40,8 @@ export default function clients() {
           ></img>
         </div>
       </div>
-
+      <br></br>
       <div className="row">
-        <div className="col-1"></div>
         <div className="col-3">
           <img
             style={{ width: "170px" }}
@@ -70,8 +71,8 @@ export default function clients() {
           ></img>
         </div>
       </div>
+      <br></br>
       <div className="row">
-        <div className="col-1"></div>
         <div className="col-3">
           <img
             style={{ maxWidth: "150px" }}
@@ -81,14 +82,14 @@ export default function clients() {
         </div>
         <div className="col-3">
           <img
-            className={clientLogo}
+            style={{ maxWidth: "150px" }}
             src="https://www.advalyze.com/wp-content/uploads/2020/07/client-stubhub.svg"
             alt="stubhub"
           ></img>
         </div>
         <div className="col-3">
           <img
-            className={clientLogo}
+            style={{ maxWidth: "150px" }}
             src="https://www.advalyze.com/wp-content/uploads/2020/07/client-doozer.png"
             alt="doozer"
           ></img>

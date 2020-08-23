@@ -1,0 +1,24 @@
+.btn {
+  background-color: #000;
+  display: inline-block;
+  font-family: "Lato";
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  padding: 1rem 3rem;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+h1 {
+  display: inline-block;
+  font-family: "Lato";
+  font-weight: 700;
+}
+
+.row {
+  padding-bottom: 60px;
+}

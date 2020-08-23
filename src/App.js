@@ -9,6 +9,7 @@ import Clients from "./components/Clients";
 import Why from "./components/Why";
 import Testimonial from "./components/Testimonial";
 import Experts from "./components/Experts";
+import AppStyle from "./style/AppStyle.css";
 
 function App() {
   return (
