@@ -8,6 +8,7 @@ export default function clients() {
     <div style={{ textAlign: "center" }}>
       <h1>A selection of our customers:</h1>
       <div className="row">
+        <div className="col-1"></div>
         <div className="col-3">
           <img
             className={clientLogo}
@@ -24,14 +25,14 @@ export default function clients() {
         </div>
         <div className="col-3">
           <img
-            className={clientLogo}
+            style={{ width: "100px" }}
             src="https://www.advalyze.com/wp-content/uploads/2020/07/client-siematic.svg"
             alt="SieMatic"
           ></img>
         </div>
         <div className="col-3">
           <img
-            className={clientLogo}
+            style={{ width: "70px" }}
             src="https://www.advalyze.com/wp-content/uploads/2020/07/client-ey.svg"
             alt="ey logo"
           ></img>
@@ -39,18 +40,19 @@ export default function clients() {
       </div>
 
       <div className="row">
+        <div className="col-1"></div>
         <div className="col-3">
           <img
-            className={clientLogo}
+            style={{ width: "170px" }}
             src="https://www.advalyze.com/wp-content/uploads/2020/07/client-fashion-id.png"
             alt="Fashion id"
           ></img>
         </div>
         <div className="col-3">
           <img
-            className={clientLogo}
+            style={{ maxWidth: "150px" }}
             src="https://www.advalyze.com/wp-content/uploads/2020/07/client-jimdo.png"
-            alt="ancestry"
+            alt="jimbo"
           ></img>
         </div>
         <div className="col-3">
@@ -69,9 +71,10 @@ export default function clients() {
         </div>
       </div>
       <div className="row">
+        <div className="col-1"></div>
         <div className="col-3">
           <img
-            className={clientLogo}
+            style={{ maxWidth: "150px" }}
             src="https://www.advalyze.com/wp-content/uploads/2020/07/client-mobile-de.png"
             alt="mobile"
           ></img>

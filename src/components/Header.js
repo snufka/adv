@@ -23,8 +23,10 @@ export default function Header() {
         </div>
         <div className="col-6" style={{ textAlign: "center" }}>
           <NavBar />
-          <h1 class="display-1">
-            Your next<br></br> digital level.
+          <h1 class="display-1" style={{ font: "Lato", fontWeight: "500" }}>
+            <strong>
+              Your next<br></br> digital level.
+            </strong>
           </h1>
           <br></br>
           <p className="lead">
