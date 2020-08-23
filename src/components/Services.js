@@ -13,7 +13,8 @@ export default function Services() {
         className="row"
         style={{
           justifyContent: "center",
-          padding: "20px",
+          paddingTop: "60px ",
+
           textAlign: "center",
         }}
       >
@@ -26,7 +27,10 @@ export default function Services() {
           </p>
         </div>
       </div>
-      <div className="row" style={{ justifyContent: "center" }}>
+      <div
+        className="row"
+        style={{ justifyContent: "center", paddingBottom: "60px" }}
+      >
         <div className="col-4">
           <div className="growthMarketingImg"></div>
           <h1 className="display-4">01</h1>
@@ -44,9 +48,14 @@ export default function Services() {
             right content, regardless of whether you rely on paid ads or
             organic.
           </p>
-          <img src={plus} alt="plus"></img>
+          <div className="plusBtn">
+            <img
+              src="https://www.advalyze.com/wp-content/uploads/2020/07/more.svg"
+              alt="plus"
+            ></img>
+          </div>
         </div>
-
+        <div className="col-1"></div>
         <div className="col-4" style={{ paddingTop: "40px" }}>
           <div className="marTechImg"></div>
           <h1 className="display-4">02</h1>
@@ -60,7 +69,12 @@ export default function Services() {
             both the marketing and the tech side and are happy to mediate
             between the two worlds.
           </p>
-          <img src={plus} alt="plus"></img>
+          <div className="plusBtn">
+            <img
+              src="https://www.advalyze.com/wp-content/uploads/2020/07/more.svg"
+              alt="plus"
+            ></img>
+          </div>
         </div>
       </div>
     </div>

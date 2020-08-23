@@ -5,7 +5,7 @@ export default function clients() {
     maxidth: "150px",
   };
   return (
-    <div style={{ textAlign: "center" }}>
+    <div style={{ textAlign: "center" }} className="padding">
       <div>
         <h1>A selection of our customers:</h1>
       </div>
@@ -96,7 +96,7 @@ export default function clients() {
         </div>
         <div className="col-3">
           <button className="btn btn-primary" style={clientLogo}>
-            And you
+            And you?
           </button>
         </div>
       </div>

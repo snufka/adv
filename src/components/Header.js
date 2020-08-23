@@ -17,13 +17,17 @@ export default function Header() {
   return (
     <div style={{ minHeight: "100vh !important" }}>
       <div className="row">
-        <div className="col"></div>
+        <div className="col-2"></div>
         <div className="col">
           <img src={Logo} alt="logo" style={logoStyle}></img>
         </div>
+
         <div className="col-5" style={{ textAlign: "center" }}>
           <NavBar />
-          <h1 class="display-1" style={{ font: "Lato", fontWeight: "500" }}>
+          <h1
+            class="display-1"
+            style={{ font: "Lato", fontWeight: "500", paddingTop: "50px" }}
+          >
             <strong>
               Your next<br></br> digital level.
             </strong>

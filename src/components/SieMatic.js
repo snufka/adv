@@ -5,7 +5,7 @@ import sieProject from "../img/siematic-project.jpg";
 export default function SieMatic() {
   return (
     <div className="container-fluid">
-      <div className="row">
+      <div className="row" style={{ padding: "0px" }}>
         <div
           className="col-6"
           style={{
@@ -35,7 +35,7 @@ export default function SieMatic() {
             How SieMatic increased qualified <br></br>lead conversion to over
             10%
           </h4>
-          <p>
+          <p className="col-11 lead" style={{ marginTop: "30px" }}>
             As a result of our digital project, SieMatic is now positioning
             itself as a digital leader in the premium kitchen segment. By
             implementing a CRM with marketing automation and a digital marketing
@@ -55,7 +55,12 @@ export default function SieMatic() {
           ></img>
         </div>
         <div className="col-6" style={{ backgroundColor: "#dcdcdc" }}>
-          <img src={sieProject} alt="sieproject" className="siePImg"></img>
+          <img
+            src={sieProject}
+            alt="sieproject"
+            className="siePImg"
+            style={{ padding: "0px" }}
+          ></img>
         </div>
       </div>
     </div>
