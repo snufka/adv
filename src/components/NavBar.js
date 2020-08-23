@@ -25,12 +25,7 @@ export default function NavBar() {
             </a>
           </li>
           <li className="nav-item">
-            <a
-              className="nav-link disabled"
-              href="#"
-              tabindex="-1"
-              aria-disabled="true"
-            >
+            <a className="nav-link" href="#">
               Contact
             </a>
           </li>
