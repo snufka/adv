@@ -5,7 +5,7 @@ import "react-awesome-slider/dist/styles.css";
 export default function Carousel() {
   const carouselStyle = { backgroundColor: "white", textAlign: "center" };
   return (
-    <>
+    <div id="Carousel">
       <AwesomeSlider>
         <div style={carouselStyle}>
           <img
@@ -46,6 +46,6 @@ export default function Carousel() {
           <p>Laura Raimondi, Management Assistant</p>
         </div>
       </AwesomeSlider>
-    </>
+    </div>
   );
 }

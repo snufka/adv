@@ -2,7 +2,11 @@ import React from "react";
 
 export default function NavBar() {
   return (
-    <div className="row" style={{ display: "inline-flex", paddingTop: "30px" }}>
+    <div
+      className="row"
+      style={{ display: "inline-flex", paddingTop: "30px" }}
+      id="NavBar"
+    >
       <div>
         <ul className="nav">
           <li className="nav-item">

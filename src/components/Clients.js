@@ -5,7 +5,7 @@ export default function clients() {
     maxidth: "150px",
   };
   return (
-    <div style={{ textAlign: "center" }} className="padding">
+    <div style={{ textAlign: "center" }} className="padding" id="Clients">
       <div>
         <h1>A selection of our customers:</h1>
       </div>

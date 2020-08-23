@@ -8,7 +8,7 @@ export default function Testimonial() {
     color: "white",
   };
   return (
-    <div className="container-fluid" style={TestStyle}>
+    <div className="container-fluid" style={TestStyle} id="Testimonial">
       <div style={{ textAlign: "center" }}>
         <h2>
           »With passion, expertise and the best<br></br>

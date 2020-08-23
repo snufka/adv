@@ -6,7 +6,7 @@ export default function Footer() {
     backgroundColor: "#dcdcdc",
   };
   return (
-    <div className="row" style={footerStyle}>
+    <div className="row" style={footerStyle} id="Footer">
       <div className="col-2"></div>
       <div className="col-2">
         <p>
