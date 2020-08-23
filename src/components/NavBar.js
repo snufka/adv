@@ -2,7 +2,7 @@ import React from "react";
 
 export default function NavBar() {
   return (
-    <div className="row" style={{ display: "inline-flex" }}>
+    <div className="row" style={{ display: "inline-flex", paddingTop: "30px" }}>
       <div>
         <ul className="nav">
           <li className="nav-item">

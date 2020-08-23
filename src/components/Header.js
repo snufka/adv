@@ -15,13 +15,13 @@ export default function Header() {
     height: "auto",
   };
   return (
-    <div>
+    <div style={{ minHeight: "100vh !important" }}>
       <div className="row">
         <div className="col"></div>
         <div className="col">
           <img src={Logo} alt="logo" style={logoStyle}></img>
         </div>
-        <div className="col-6" style={{ textAlign: "center" }}>
+        <div className="col-5" style={{ textAlign: "center" }}>
           <NavBar />
           <h1 class="display-1" style={{ font: "Lato", fontWeight: "500" }}>
             <strong>
@@ -32,11 +32,12 @@ export default function Header() {
           <p className="lead">
             <strong>Growth marketing scales your business model.</strong>
           </p>
+          <br></br>
           <button type="button" className="btn btn-dark">
             Learn More
           </button>
         </div>
-        <div className="col-3">
+        <div className="col-4">
           <img src={background} alt="background" style={headerImage}></img>
         </div>
       </div>
