@@ -1,6 +1,7 @@
 import React from "react";
 
 import Main from "./components/Main";
+import NavBar from "./components/NavBar";
 import Services from "./components/Services";
 import SieMatic from "./components/SieMatic";
 import Footer from "./components/Footer";
@@ -14,6 +15,7 @@ import "./style/AppStyle.css";
 function App() {
   return (
     <div>
+      <NavBar />
       <Main />
       <Services />
       <Clients />
