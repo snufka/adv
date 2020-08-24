@@ -3,7 +3,7 @@ import background from "../img/background.JPG";
 import Logo from "../img/logoadv.png";
 import NavBar from "./NavBar";
 
-export default function Header() {
+export default function () {
   const headerImage = {
     width: "100%",
   };
@@ -15,7 +15,7 @@ export default function Header() {
     height: "auto",
   };
   return (
-    <div style={{ minHeight: "100vh !important" }} id="Header">
+    <div style={{ minHeight: "100vh" }} id="main">
       <div className="row">
         <div className="col-1"></div>
         <div className="col">
@@ -23,11 +23,7 @@ export default function Header() {
         </div>
 
         <div className="col-5" style={{ textAlign: "center" }}>
-          <NavBar />
-          <h1
-            class="display-1"
-            style={{ font: "Lato", fontWeight: "500", paddingTop: "50px" }}
-          >
+          <h1 className="display-1 bold">
             <strong>
               Your next<br></br> digital level.
             </strong>
@@ -37,9 +33,11 @@ export default function Header() {
             <strong>Growth marketing scales your business model.</strong>
           </p>
           <br></br>
-          <button type="button" className="btn btn-dark">
-            Learn More
-          </button>
+          <a href="#service">
+            <button type="button" className="btn btn-dark">
+              Learn More
+            </button>
+          </a>
         </div>
         <div className="col-4">
           <img src={background} alt="background" style={headerImage}></img>

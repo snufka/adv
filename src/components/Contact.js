@@ -5,7 +5,7 @@ export default function Contact() {
     <div
       className="row justify-content-md-center"
       style={{ paddingBottom: "60px" }}
-      id="Contact"
+      id="contact"
     >
       <div className="col-4" style={{ textAlign: "center" }}>
         <img

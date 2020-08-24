@@ -1,14 +1,14 @@
 import React from "react";
 import plus from "../img/plus.JPG";
 
-import servicesStyle from "../style/ServStyle.css";
+import "../style/ServStyle.css";
 
 export default function Services() {
   return (
     <div
       className="container-fluid"
       style={{ backgroundColor: "#f8f8f8", justifyContent: "center" }}
-      id="Services"
+      id="service"
     >
       <div
         className="row"

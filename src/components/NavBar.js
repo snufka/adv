@@ -1,6 +1,4 @@
 import React from "react";
-import Scroll from "react-scroll";
-const ScrollLink = Scroll.ScrollLink;
 
 export default function NavBar() {
   return (
@@ -11,35 +9,23 @@ export default function NavBar() {
     >
       <div>
         <ul className="nav">
-          <li>
-            <ScrollLink
-              to="SieMatic"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className="some-class"
-              activeClass="some-active-class"
-            >
-              Link Text Goes Here
-            </ScrollLink>
-          </li>
           <li className="nav-item">
-            <a className="nav-link active" href="#">
+            <a className="nav-link active" href="#service">
               Services
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="#project">
               Projects
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="https://advalyze-jobs.personio.de/">
               Jobs
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="#contact">
               Contact
             </a>
           </li>

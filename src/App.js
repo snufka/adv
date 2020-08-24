@@ -1,5 +1,6 @@
 import React from "react";
-import Header from "./components/Header";
+
+import Main from "./components/Main";
 import Services from "./components/Services";
 import SieMatic from "./components/SieMatic";
 import Footer from "./components/Footer";
@@ -8,12 +9,12 @@ import Clients from "./components/Clients";
 import Why from "./components/Why";
 import Testimonial from "./components/Testimonial";
 import Experts from "./components/Experts";
-import AppStyle from "./style/AppStyle.css";
+import "./style/AppStyle.css";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
+    <div>
+      <Main />
       <Services />
       <Clients />
       <SieMatic />
