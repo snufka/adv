@@ -78,6 +78,79 @@ export default function Services() {
           </div>
         </div>
       </div>
+      <div className="growthMarketingOnclick">
+        <div className="row justify-content-md-center">
+          <div className="col-3">
+            <h4>Growth Strategy</h4>
+            <p>
+              We are your internet entrepreneur for rent. With the right growth
+              mindset, we understand brand and performance. We combine digital
+              brand management with digital marketing and know your economic and
+              technical challenges. Together we will develop your individual
+              growth strategy.
+            </p>
+          </div>
+          <div className="col-3">
+            <h4>Funnel optimization</h4>
+            <p>
+              With our lean startup method, we analyze your sales funnel from
+              qualified lead to conversion. Data-driven, we identify all
+              relevant steps along your B2B or B2C sales funnel in order to
+              continuously optimize it and significantly increase your
+              conversion rate.
+            </p>
+          </div>
+          <div className="col-3">
+            <h4>Customer journey marketing</h4>
+            <p>
+              The right message at the right time in the right place. From
+              performance to content marketing to TV, we design an integral and
+              optimized customer experience from the first touchpoint to
+              conversion. With high-quality traffic, we create relevant insights
+              and increase the growth of your company.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="marTechOnclick">
+        <div className="row justify-content-md-center">
+          <div className="close-overlay"></div>
+          <div className="col-3">
+            <h4>Your Marketing Tools</h4>
+            <p>
+              DSP, DMP, CDP and CRM is not a verse from the song “MFG” of the
+              fantastic four, but technologies from Marketing Technik Stacks
+              that we have already set up. We'll help you build your Marketing
+              Tech Stack. We are not “in love with tools”, but always start from
+              your use cases and work together to develop the requirements for
+              an optimal solution. Only then do we evaluate the tools with which
+              you can achieve your goals lean and cost-effectively.
+            </p>
+          </div>
+          <div className="col-3">
+            <h4>Use your data</h4>
+            <p>
+              So that we can rely on our data-driven decisions, we are experts
+              in GDPR-compliant web & app tracking, reporting of current KPIs
+              and ad hoc analyzes. However, it is much more effective to
+              actively use the data for marketing. Smart remarketing audiences,
+              sales-driving CRM segmentation and data-driven personalization
+              make the difference in your marketing.
+            </p>
+          </div>
+          <div className="col-3">
+            <h4>Marketing Development</h4>
+            <p>
+              We are passionate about developing conversion-optimized landing
+              pages as well as communicative chatbots and we are passionate
+              about configuring marketing automation flows. We connect the
+              various marketing tools via API connections so that the data can
+              flow between the systems. And sometimes we just make a WordPress
+              site.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,21 +1,37 @@
 .growthMarketingImg:before {
-    content: '';
-    background: url(//www.advalyze.com/wp-content/themes/advalyze/assets/css/../icon/01-growth-marketing.svg) no-repeat;
-    width: 150px;
-    height: 200px;
-    background-size: 150px 200px;
-    position: absolute;
-    left: -80px;
-    top: -20px;
+  content: "";
+  background: url(//www.advalyze.com/wp-content/themes/advalyze/assets/css/../icon/01-growth-marketing.svg)
+    no-repeat;
+  width: 150px;
+  height: 200px;
+  background-size: 150px 200px;
+  position: absolute;
+  left: -80px;
+  top: -20px;
 }
 
 .marTechImg:before {
-    content: '';
-    background: url(//www.advalyze.com/wp-content/themes/advalyze/assets/icon/02-mar-tech.svg) no-repeat;
-    width: 150px;
-    height: 200px;
-    background-size: 150px 200px;
-    position: absolute;
-    left: -95px;
-    top: 10px;
+  content: "";
+  background: url(//www.advalyze.com/wp-content/themes/advalyze/assets/icon/02-mar-tech.svg)
+    no-repeat;
+  width: 150px;
+  height: 200px;
+  background-size: 150px 200px;
+  position: absolute;
+  left: -95px;
+  top: 10px;
+}
+
+.close-overlay:after {
+  content: "";
+  background: url(//www.advalyze.com/wp-content/themes/advalyze/assets/css/../icon/more.svg)
+    no-repeat;
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+  position: absolute;
+  right: 0;
+  top: -40px;
+  transform: rotate(45deg);
+  cursor: pointer;
 }

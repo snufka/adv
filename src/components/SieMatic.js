@@ -61,8 +61,63 @@ export default function SieMatic() {
             className="siePImg"
             style={{ padding: "0px" }}
           ></img>
+          <div className="contentOnClick" style={{ textAlign: "center" }}>
+            <div>
+              <div>
+                <p className="lead">
+                  The qualified leads are automatically fed into a sales
+                  pipeline that is accessible to every retailer. With the help
+                  of the digitally collected information and data points,
+                  significantly optimized sales processes can be carried out in
+                  the future. For the first time, every local dealer has a
+                  transparent and structured overview of the new and digitally
+                  pre-qualified leads, and can systematically evaluate them in
+                  real time in order to generate appointments and ultimately
+                  deals faster and more efficiently.
+                </p>
+              </div>
+              <div className="row ">
+                <div className="col-4">
+                  <img src="https://www.advalyze.com/wp-content/uploads/2020/07/traffic.svg"></img>
+                  <h3>+80%</h3>
+                  <p>traffic</p>
+                </div>
+                <div className="col-4">
+                  <img src="https://www.advalyze.com/wp-content/uploads/2020/07/leads.svg"></img>
+                  <h3>+60%</h3>
+                  <p>leads</p>
+                </div>
+                <div className="col-4">
+                  <img src="https://www.advalyze.com/wp-content/uploads/2020/07/haendlersuchen.svg"></img>
+                  <h3>+10%</h3>
+                  <p>sales conversion</p>
+                </div>
+              </div>
+              <div>
+                <p className="lead">
+                  As a premium kitchen manufacturer, SieMatic is now in a
+                  position to make its digital success measurable from the first
+                  touchpoint through the sale of the kitchen to the aftersale,
+                  and to increase sales significantly through continuous
+                  optimization of performance. For the first time it is possible
+                  to give a quality assessment of the marketing channels at
+                  cost-per-order level and to track them down to the last
+                  detail.
+                </p>
+                <img src="https://www.advalyze.com/wp-content/uploads/2020/07/close-black.svg"></img>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
 }
+
+/*
+
+
+
+
+
+*/
