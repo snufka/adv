@@ -5,6 +5,9 @@ export default function Footer() {
     padding: "60px",
     backgroundColor: "#dcdcdc",
   };
+  const socialMediaIcons = {
+    paddingRight: "10px",
+  };
   return (
     <div className="row" style={footerStyle} id="Footer">
       <div className="col-2"></div>
@@ -57,6 +60,7 @@ export default function Footer() {
           href="https://www.linkedin.com/company/advalyze-gmbh/"
           target="_blank"
           rel="noopener noreferrer"
+          style={socialMediaIcons}
         >
           <i className="fa bg-light fa-linkedin-square"></i>
         </a>
@@ -65,6 +69,7 @@ export default function Footer() {
           href="https://www.instagram.com/advalyze/"
           target="_blank"
           rel="noopener noreferrer"
+          style={socialMediaIcons}
         >
           <i className="fa bg-light fa-instagram"></i>
         </a>
@@ -73,6 +78,7 @@ export default function Footer() {
           href="https://www.facebook.com/advalyze/"
           target="_blank"
           rel="noopener noreferrer"
+          style={socialMediaIcons}
         >
           <i className="fa bg-light fa-facebook-square"></i>
         </a>
@@ -81,6 +87,7 @@ export default function Footer() {
           href="https://www.xing.com/companies/advalyzegmbh/"
           target="_blank"
           rel="noopener noreferrer"
+          style={socialMediaIcons}
         >
           <i className="fa bg-light fa-xing-square"></i>
         </a>

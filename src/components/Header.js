@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <div style={{ minHeight: "100vh !important" }} id="Header">
       <div className="row">
-        <div className="col-2"></div>
+        <div className="col-1"></div>
         <div className="col">
           <img src={Logo} alt="logo" style={logoStyle}></img>
         </div>

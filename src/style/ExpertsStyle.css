@@ -1,0 +1,17 @@
+.partners {
+  background: url(//www.advalyze.com/wp-content/uploads/2020/07/office-02.jpg)
+    no-repeat;
+}
+.office {
+  content: "";
+  background: url(//www.advalyze.com/wp-content/uploads/2020/07/office-03.jpg);
+  max-width: 100%;
+  height: auto;
+}
+.office2 {
+  content: "";
+  background: url(//www.advalyze.com/wp-content/uploads/2020/07/office-03.jpg);
+  margin-top: -40px;
+  max-width: 100%;
+  height: auto;
+}
