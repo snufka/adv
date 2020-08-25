@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import plus from "../img/plus.JPG";
 
 import "../style/ServStyle.css";
 
@@ -40,7 +39,6 @@ export default function Services() {
           <h4>Growth Marketing</h4>
           {!showMarketing && (
             <>
-              
               <p className="lead">
                 With growth marketing, we bring your marketing to the level of a
                 digital leader. The right communication at all relevant
@@ -69,20 +67,25 @@ export default function Services() {
           <h1 className="display-4">02</h1>
 
           <h4>MarTech</h4>
-         {!showMarketing && <> <p className="lead">
-            Only the right marketing tools enable the implementation of
-            data-driven customer journey communication. Here we support you with
-            the selection and implementation of appropriate systems and thus
-            make your data usable for you. We understand the requirements of
-            both the marketing and the tech side and are happy to mediate
-            between the two worlds.
-          </p>
-          <div className="plusBtn">
-            <img
-              src="https://www.advalyze.com/wp-content/uploads/2020/07/more.svg"
-              alt="plus"
-            ></img>
-          </div></>}
+          {!showMarketing && (
+            <>
+              {" "}
+              <p className="lead">
+                Only the right marketing tools enable the implementation of
+                data-driven customer journey communication. Here we support you
+                with the selection and implementation of appropriate systems and
+                thus make your data usable for you. We understand the
+                requirements of both the marketing and the tech side and are
+                happy to mediate between the two worlds.
+              </p>
+              <div className="plusBtn">
+                <img
+                  src="https://www.advalyze.com/wp-content/uploads/2020/07/more.svg"
+                  alt="plus"
+                ></img>
+              </div>
+            </>
+          )}
         </div>
       </div>
       {showMarketing && (
