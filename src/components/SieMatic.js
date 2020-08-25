@@ -50,7 +50,11 @@ export default function SieMatic() {
             specific studio visit.
           </p>
           <br></br>
-          <div className="openBtn" onClick={() => setShowData(true)}>
+          <div
+            className="openBtn"
+            onClick={() => setShowData(true)}
+            style={{ paddingBottom: "10px" }}
+          >
             <img
               src="https://www.advalyze.com/wp-content/uploads/2020/07/more-white.svg"
               alt="plus"
@@ -70,7 +74,10 @@ export default function SieMatic() {
             </>
           )}
           {showData && (
-            <div className="contentOnClick" style={{ textAlign: "center" }}>
+            <div
+              className="contentOnClick"
+              style={{ textAlign: "center", paddingTop: "10px" }}
+            >
               <div>
                 <div>
                   <p className="lead">
@@ -113,7 +120,11 @@ export default function SieMatic() {
                     channels at cost-per-order level and to track them down to
                     the last detail.
                   </p>
-                  <div className="closeBtn" onClick={() => setShowData(false)}>
+                  <div
+                    className="closeBtn"
+                    onClick={() => setShowData(false)}
+                    style={{ paddingBottom: "10px" }}
+                  >
                     <img src="https://www.advalyze.com/wp-content/uploads/2020/07/close-black.svg"></img>
                   </div>
                 </div>

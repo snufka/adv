@@ -95,9 +95,11 @@ export default function clients() {
           ></img>
         </div>
         <div className="col-3">
-          <button className="btn btn-primary" style={clientLogo}>
-            And you?
-          </button>
+          <a href="#contact">
+            <button className="btn btn-primary" style={clientLogo}>
+              And you?
+            </button>
+          </a>
         </div>
       </div>
     </div>
