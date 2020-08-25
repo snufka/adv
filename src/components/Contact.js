@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Contact() {
+  const activeCampaign = `<div class="_form_9"></div><script src="https://mariname86.activehosted.com/f/embed.php?id=9" type="text/javascript" charset="utf-8"></script>`;
   return (
     <div
       className="row justify-content-md-center"
@@ -18,7 +19,11 @@ export default function Contact() {
           advalyze teams!
         </h1>
         <br></br>
-        <button className="btn btn-secondary btn-lg"> Discover Jobs Now</button>
+        <a href="https://advalyze-jobs.personio.de/">
+          <button className="btn btn-secondary btn-lg">
+            Discover Jobs Now
+          </button>
+        </a>
       </div>
       <div className="col-4" style={{ textAlign: "center" }}>
         <img
@@ -31,6 +36,7 @@ export default function Contact() {
         </h1>
         <br></br>
         <button className="btn btn-secondary btn-lg"> Contact Now</button>
+        <div dangerouslySetInnerHTML={{ __html: activeCampaign }} />
       </div>
     </div>
   );

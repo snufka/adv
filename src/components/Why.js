@@ -58,7 +58,9 @@ export default function Why() {
           </p>
         </div>
       </div>
-      <button className="btn btn-secondary btn-lg"> Contact Now</button>
+      <a href="#contact">
+        <button className="btn btn-secondary btn-lg"> Contact Now</button>
+      </a>
     </div>
   );
 }
