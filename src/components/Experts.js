@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "./Carousel";
-import ExpertsStyle from "../style/ExpertsStyle.css";
+import "../style/ExpertsStyle.css";
 
 export default function Experts() {
   return (
@@ -19,8 +19,12 @@ export default function Experts() {
       </div>
       <div className="row">
         <div className="col-1"></div>
-        <div class="col-6">
-          <div className="partners"></div>
+        <div className="col-6">
+          <img
+            src="https://www.advalyze.com/wp-content/uploads/2020/07/office-02.jpg"
+            alt="founders"
+            style={{ maxWidth: "100%", height: "auto", marginLeft: "40px" }}
+          ></img>
           <Carousel />
           <img
             src="https://www.advalyze.com/wp-content/uploads/2020/07/office-01.jpg"
@@ -28,7 +32,7 @@ export default function Experts() {
             style={{ maxWidth: "100%" }}
           />
         </div>
-        <div class="col-5" style={{ marginTop: "70px" }}>
+        <div className="col-5" style={{ marginTop: "70px" }}>
           <img
             src="https://www.advalyze.com/wp-content/uploads/2020/07/office-03.jpg"
             alt="office"
@@ -40,8 +44,4 @@ export default function Experts() {
   );
 }
 
-/*<img
-src="https://www.advalyze.com/wp-content/uploads/2020/07/office-02.jpg"
-alt="founders"
-style={{ maxWidth: "100%", height: "auto", marginLeft: "40px" }}
-></img>*/
+/**/

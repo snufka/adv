@@ -10,6 +10,7 @@ import Clients from "./components/Clients";
 import Why from "./components/Why";
 import Testimonial from "./components/Testimonial";
 import Experts from "./components/Experts";
+import ActiveCampForm from "./components/ActiveCampForm";
 import "./style/AppStyle.css";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Testimonial />
       <Experts />
       <Contact />
+      <ActiveCampForm />
       <Footer />
     </div>
   );

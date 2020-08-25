@@ -50,7 +50,11 @@ export default function Footer() {
           Policy Imprint
         </a>
         <br></br>
-        <a href="#" title="Cookie settings" class="borlabs-cookie-preference">
+        <a
+          href="#"
+          title="Cookie settings"
+          className="borlabs-cookie-preference"
+        >
           Cookie Settings
         </a>
       </div>

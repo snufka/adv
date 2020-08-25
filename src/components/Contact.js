@@ -1,9 +1,5 @@
 import React from "react";
 
-const activeCampaign = `
-  <div class="_form_9"></div><script src="https://mariname86.activehosted.com/f/embed.php?id=9" 
-  type="text/javascript" charset="utf-8"></script>`;
-
 export default function Contact() {
   return (
     <div
@@ -39,9 +35,6 @@ export default function Contact() {
         </h1>
         <br></br>
         <button className="btn btn-secondary btn-lg"> Contact Now</button>
-        <div>
-          <div dangerouslySetInnerHTML={{ __html: activeCampaign }} />
-        </div>
       </div>
     </div>
   );
