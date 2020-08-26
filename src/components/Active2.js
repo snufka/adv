@@ -60,7 +60,7 @@ export default class ActiveCampaignForm extends Component {
               placeholder="ex: hello@youareawesome.com"
               required
             />
-            <input type="submit" value="Submit" />
+            <input type="submit" value="Submit" name="submit" />
           </form>
         )}
       </div>
