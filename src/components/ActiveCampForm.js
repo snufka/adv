@@ -19,7 +19,7 @@ export default function ActiveCampForm({ custom, showPhone, requirePhone }) {
         form_data.append(key, cleaned[key]);
       }
 
-      fetch("https://mariname86.activehosted.com/f/embed.php", {
+      fetch("https://mariname86.activehosted.com/proc.php", {
         method: "POST",
         mode: "no-cors",
         cache: "no-cache",
