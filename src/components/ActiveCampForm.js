@@ -7,7 +7,7 @@ export default function ActiveCampForm({ custom, showPhone, requirePhone }) {
   const onSubmit = (data) => {
     try {
       //Need to rename a few fields to get this to work with activecampaign
-      let preppedData = { "field[14]": data.custom, ...data };
+      let preppedData = { "field[2]": data.custom, ...data };
 
       //Remove the old custom field (renamed above)
       const { custom, ...cleaned } = preppedData;
@@ -118,13 +118,14 @@ export default function ActiveCampForm({ custom, showPhone, requirePhone }) {
         <label className="_form-label">Message</label>
         <textarea
           type="textArea"
+          name="message"
           placeholder="What we should know?"
           ref={register}
         />
         <br />
         <label className="_form-label">Project Start*</label>
         <select name="field[2]" ref={register}>
-          <option selected></option>
+          <option value=""></option>
           <option value="immediately">immediately</option>
           <option value="in 3-6 weeks">in 3-6 weeks</option>
           <option value="in 3 months or later">in 3 months or later</option>
@@ -135,7 +136,7 @@ export default function ActiveCampForm({ custom, showPhone, requirePhone }) {
         <br />
         <label className="_form-label">Company Size</label>
         <select name="field[3]" ref={register}>
-          <option selected></option>
+          <option value=""></option>
           <option value="1-10 worker">1-10 worker</option>
           <option value="11-50 worker">11-50 worker</option>
           <option value="51-500 worker">51-500 worker</option>

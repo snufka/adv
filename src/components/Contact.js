@@ -34,7 +34,10 @@ export default function Contact() {
           digital potential!
         </h1>
         <br></br>
-        <button className="btn btn-secondary btn-lg"> Contact Now</button>
+
+        <a href="https://mariname86.activehosted.com/f/9">
+          <button className="btn btn-secondary btn-lg"> Contact Now</button>
+        </a>
       </div>
     </div>
   );

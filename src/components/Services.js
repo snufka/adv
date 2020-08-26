@@ -69,7 +69,6 @@ export default function Services() {
           <h4>MarTech</h4>
           {!showMarketing && (
             <>
-              {" "}
               <p className="lead">
                 Only the right marketing tools enable the implementation of
                 data-driven customer journey communication. Here we support you
@@ -90,6 +89,17 @@ export default function Services() {
       </div>
       {showMarketing && (
         <div className="growthMarketingOnclick">
+          <div
+            className="row"
+            onClick={() => setShowMarketing(false)}
+            style={{
+              position: "absolute",
+              right: "35px",
+              paddingBottom: "10px",
+            }}
+          >
+            <img src="https://www.advalyze.com/wp-content/uploads/2020/07/close-black.svg"></img>
+          </div>
           <div className="row justify-content-md-center">
             <div className="col-3">
               <h4>Growth Strategy</h4>
@@ -124,8 +134,12 @@ export default function Services() {
           </div>
         </div>
       )}
+    </div>
+  );
+}
 
-      <div className="marTechOnclick">
+/*
+<div className="marTechOnclick">
         <div className="row justify-content-md-center">
           <div className="close-overlay"></div>
           <div className="col-3">
@@ -164,11 +178,6 @@ export default function Services() {
           </div>
         </div>
       </div>
-    </div>
-  );
-}
-
-/*
 const growthMarketingImg = {
     content: "",
     width: "150px",
