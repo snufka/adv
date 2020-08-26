@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 
 export default function ActiveCampForm() {
   const { register, handleSubmit, errors } = useForm();
-
+  console.log(errors);
   const onSubmit = (data) => {
     console.log(data);
     try {

@@ -14,7 +14,6 @@ import Experts from "./components/Experts";
 //import Active2 from "./components/Active2";
 //import ActivaCampaignModal from "./components/ActiveCampaignModal";
 import "./style/AppStyle.css";
-import ActiveCampaignModal from "./components/ActiveCampaignModal";
 
 function App() {
   return (
