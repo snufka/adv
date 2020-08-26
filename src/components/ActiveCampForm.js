@@ -145,7 +145,7 @@ export default function ActiveCampForm({ custom, showPhone, requirePhone }) {
         <div className="_form-thank-you"></div>
       </div>
 
-      <input type="submit" />
+      <input type="submit" value="submit" />
     </form>
   );
 
