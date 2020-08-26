@@ -94,17 +94,26 @@ export default function SieMatic() {
                 </div>
                 <div className="row ">
                   <div className="col-4">
-                    <img src="https://www.advalyze.com/wp-content/uploads/2020/07/traffic.svg" />
+                    <img
+                      src="https://www.advalyze.com/wp-content/uploads/2020/07/traffic.svg"
+                      alt="leads"
+                    />
                     <h3>+80%</h3>
                     <p>traffic</p>
                   </div>
                   <div className="col-4">
-                    <img src="https://www.advalyze.com/wp-content/uploads/2020/07/leads.svg" />
+                    <img
+                      src="https://www.advalyze.com/wp-content/uploads/2020/07/leads.svg"
+                      alt="leads"
+                    />
                     <h3>+60%</h3>
                     <p>leads</p>
                   </div>
                   <div className="col-4">
-                    <img src="https://www.advalyze.com/wp-content/uploads/2020/07/haendlersuchen.svg" />
+                    <img
+                      src="https://www.advalyze.com/wp-content/uploads/2020/07/haendlersuchen.svg"
+                      alt="sales"
+                    />
                     <h3>+10%</h3>
                     <p>sales conversion</p>
                   </div>
@@ -125,7 +134,10 @@ export default function SieMatic() {
                     onClick={() => setShowData(false)}
                     style={{ paddingBottom: "10px" }}
                   >
-                    <img src="https://www.advalyze.com/wp-content/uploads/2020/07/close-black.svg"></img>
+                    <img
+                      src="https://www.advalyze.com/wp-content/uploads/2020/07/close-black.svg"
+                      alt="closeBtn"
+                    ></img>
                   </div>
                 </div>
               </div>
