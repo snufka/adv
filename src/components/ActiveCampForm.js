@@ -7,11 +7,15 @@ export default function ActiveCampForm() {
   const onSubmit = (data) => {
     console.log(data);
     try {
+      let form_data = new FormData();
+      for (let key in data) {
+        form_data.append(key, data[key]);
+      }
       fetch("https://mariname86.activehosted.com/proc.php", {
         method: "POST",
         mode: "no-cors",
         cache: "no-cache",
-        body: data,
+        body: form_data,
       });
     } catch (error) {
       // handle server errors
