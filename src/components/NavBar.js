@@ -11,7 +11,10 @@ export default function NavBar() {
       <div className="container">
         <div>
           <a className="navbar-brand">
-            <img src="https://www.advalyze.com/wp-content/uploads/2020/07/advalyze-logo.svg" />
+            <img
+              src="https://www.advalyze.com/wp-content/uploads/2020/07/advalyze-logo.svg"
+              href="#main"
+            />
           </a>
         </div>
         <div className="collapse navbar-collapse">

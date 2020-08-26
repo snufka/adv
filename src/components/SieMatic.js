@@ -94,17 +94,17 @@ export default function SieMatic() {
                 </div>
                 <div className="row ">
                   <div className="col-4">
-                    <img src="https://www.advalyze.com/wp-content/uploads/2020/07/traffic.svg"></img>
+                    <img src="https://www.advalyze.com/wp-content/uploads/2020/07/traffic.svg" />
                     <h3>+80%</h3>
                     <p>traffic</p>
                   </div>
                   <div className="col-4">
-                    <img src="https://www.advalyze.com/wp-content/uploads/2020/07/leads.svg"></img>
+                    <img src="https://www.advalyze.com/wp-content/uploads/2020/07/leads.svg" />
                     <h3>+60%</h3>
                     <p>leads</p>
                   </div>
                   <div className="col-4">
-                    <img src="https://www.advalyze.com/wp-content/uploads/2020/07/haendlersuchen.svg"></img>
+                    <img src="https://www.advalyze.com/wp-content/uploads/2020/07/haendlersuchen.svg" />
                     <h3>+10%</h3>
                     <p>sales conversion</p>
                   </div>

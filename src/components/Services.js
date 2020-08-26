@@ -98,7 +98,10 @@ export default function Services() {
               paddingBottom: "10px",
             }}
           >
-            <img src="https://www.advalyze.com/wp-content/uploads/2020/07/close-black.svg"></img>
+            <img
+              src="https://www.advalyze.com/wp-content/uploads/2020/07/close-black.svg"
+              alt=""
+            ></img>
           </div>
           <div className="row justify-content-md-center">
             <div className="col-3">

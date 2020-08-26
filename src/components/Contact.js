@@ -13,6 +13,7 @@ export default function Contact() {
           className="contactImg"
           style={{ marginBottom: "10px" }}
           src="https://www.advalyze.com/wp-content/uploads/2020/07/01-werde-teil-des-teams.svg"
+          alt=""
         ></img>
         <h1 className="Dispay-1">
           Become part of the<br></br>
@@ -29,6 +30,7 @@ export default function Contact() {
         <img
           className="contactImg"
           src="https://www.advalyze.com/wp-content/uploads/2020/07/02-entdecke-potenzial.svg"
+          alt=""
         ></img>
         <h1 className="Dispay-1">
           Discover your<br></br>
