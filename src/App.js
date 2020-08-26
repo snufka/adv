@@ -10,9 +10,11 @@ import Clients from "./components/Clients";
 import Why from "./components/Why";
 import Testimonial from "./components/Testimonial";
 import Experts from "./components/Experts";
-import ActiveCampForm from "./components/ActiveCampForm";
+//import ActiveCampForm from "./components/ActiveCampForm";
 //import Active2 from "./components/Active2";
+//import ActivaCampaignModal from "./components/ActiveCampaignModal";
 import "./style/AppStyle.css";
+import ActiveCampaignModal from "./components/ActiveCampaignModal";
 
 function App() {
   return (
@@ -26,7 +28,7 @@ function App() {
       <Testimonial />
       <Experts />
       <Contact />
-      <ActiveCampForm />
+
       <Footer />
     </div>
   );

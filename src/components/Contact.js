@@ -1,4 +1,5 @@
 import React from "react";
+import ActiveCampaignModal from "./ActiveCampaignModal";
 
 export default function Contact() {
   return (
@@ -34,10 +35,7 @@ export default function Contact() {
           digital potential!
         </h1>
         <br></br>
-
-        <a href="https://mariname86.activehosted.com/f/9">
-          <button className="btn btn-secondary btn-lg"> Contact Now</button>
-        </a>
+        <ActiveCampaignModal />
       </div>
     </div>
   );

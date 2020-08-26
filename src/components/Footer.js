@@ -51,7 +51,7 @@ export default function Footer() {
         </a>
         <br></br>
         <a
-          href="#"
+          href="#cookies"
           title="Cookie settings"
           className="borlabs-cookie-preference"
         >
