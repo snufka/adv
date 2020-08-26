@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Deploted at: https://advalyze.netlify.app/
+Deployed at: https://advalyze.netlify.app/
 
 ## Available Scripts
 
