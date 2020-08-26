@@ -82,97 +82,67 @@ export default function ActiveCampForm({ custom, showPhone, requirePhone }) {
           value="2"
           ref={register({ required: true })}
         />
-
         <input
           type="hidden"
           name="custom"
           value={custom}
           ref={register({ required: true })}
         />
+        <label className="_form-label">Full Name*</label>
         <input
           type="text"
           placeholder="Name"
           name="fullname"
           ref={register({ required: true, maxLength: 80 })}
         />
+        <br />
+        <label className="_form-label">Email*</label>
         <input
           type="text"
           placeholder="Email"
           name="email"
           ref={register({ required: true, pattern: /^\S+@\S+$/i })}
         />
-        <div className="_form_element _x36758101 _full_width ">
-          <label className="_form-label">Phone</label>
-          <div className="_field-wrapper">
-            <input
-              type="text"
-              name="phone"
-              placeholder="Type your phone number"
-            />
-          </div>
-        </div>
-        <div className="_form_element _x80041623 _full_width ">
-          <label className="_form-label">Email*</label>
-          <div className="_field-wrapper">
-            <input
-              type="text"
-              name="email"
-              placeholder="Type your email"
-              required
-            />
-          </div>
-        </div>
-        <div className="_form_element _field2 _full_width ">
-          <label className="_form-label">Project Start*</label>
-          <div className="_field-wrapper">
-            <select name="field[2]" required>
-              <option selected></option>
-              <option value="immediately">immediately</option>
-              <option value="in 3-6 weeks">in 3-6 weeks</option>
-              <option value="in 3 months or later">in 3 months or later</option>
-            </select>
-          </div>
-        </div>
-        <div className="_form_element _field1 _full_width ">
-          <label className="_form-label">Project Budget</label>
-          <div className="_field-wrapper">
-            <input type="text" name="field[1]" value="" placeholder="" />
-          </div>
-        </div>
-        <div className="_form_element _field3 _full_width ">
-          <label className="_form-label">Company Size</label>
-          <div className="_field-wrapper">
-            <select name="field[3]">
-              <option selected></option>
-              <option value="1-10 worker">1-10 worker</option>
-              <option value="11-50 worker">11-50 worker</option>
-              <option value="51-500 worker">51-500 worker</option>
-              <option value="500+ worker">500+ worker</option>
-            </select>
-          </div>
-        </div>
-        <div className="_form_element _field4 _full_width ">
-          <label className="_form-label">Message</label>
-          <div className="_field-wrapper">
-            <textarea name="field[4]" placeholder=""></textarea>
-          </div>
-        </div>
-        <div className="_clear-element"></div>
-      </div>
-      <div className="_form-thank-you"></div>
-
-      {showPhone && (
+        <br /> <label className="_form-label">Phone*</label>
         <input
           type="tel"
           placeholder="Phone number"
           name="phone"
           ref={register({
-            required: requirePhone,
+            required: true,
             minLength: 6,
             maxLength: 12,
           })}
         />
-      )}
+        <br />
+        <label className="_form-label">Message</label>
+        <textarea
+          type="textArea"
+          placeholder="What we should know?"
+          ref={register}
+        />
+        <br />
+        <label className="_form-label">Project Start*</label>
+        <select name="field[2]" ref={register}>
+          <option selected></option>
+          <option value="immediately">immediately</option>
+          <option value="in 3-6 weeks">in 3-6 weeks</option>
+          <option value="in 3 months or later">in 3 months or later</option>
+        </select>
+        <br />
+        <label className="_form-label">Project Budget</label>
+        <input type="text" name="field[1]" ref={register} />
+        <br />
+        <label className="_form-label">Company Size</label>
+        <select name="field[3]" ref={register}>
+          <option selected></option>
+          <option value="1-10 worker">1-10 worker</option>
+          <option value="11-50 worker">11-50 worker</option>
+          <option value="51-500 worker">51-500 worker</option>
+          <option value="500+ worker">500+ worker</option>
+        </select>
+        <div className="_form-thank-you"></div>
+      </div>
 
       <input type="submit" />
     </form>
