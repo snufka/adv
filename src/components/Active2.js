@@ -53,7 +53,7 @@ export default class ActiveCampaignForm extends Component {
             <input type="hidden" name="m" value="0" />
             <input type="hidden" name="act" value="sub" />
             <input type="hidden" name="v" value="2" />
-
+            <input type="text" name="fullname" placeholder="yourname" />
             <input
               type="text"
               name="email"

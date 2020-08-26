@@ -5,9 +5,10 @@ export default function ActiveCampForm({ custom, showPhone, requirePhone }) {
   const { register, handleSubmit, errors } = useForm();
 
   const onSubmit = (data) => {
+    console.log(data);
     try {
       //Need to rename a few fields to get this to work with activecampaign
-      let preppedData = { "field[2]": data.custom, ...data };
+      let preppedData = { "field[2]": data.projectStart, ...data };
 
       //Remove the old custom field (renamed above)
       const { custom, ...cleaned } = preppedData;
@@ -124,7 +125,7 @@ export default function ActiveCampForm({ custom, showPhone, requirePhone }) {
         />
         <br />
         <label className="_form-label">Project Start*</label>
-        <select name="field[2]" ref={register}>
+        <select name="projectStart" ref={register}>
           <option value=""></option>
           <option value="immediately">immediately</option>
           <option value="in 3-6 weeks">in 3-6 weeks</option>
