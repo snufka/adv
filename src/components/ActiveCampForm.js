@@ -1,29 +1,17 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 
-export default function ActiveCampForm({ custom, showPhone, requirePhone }) {
+export default function ActiveCampForm() {
   const { register, handleSubmit, errors } = useForm();
 
   const onSubmit = (data) => {
     console.log(data);
     try {
-      //Need to rename a few fields to get this to work with activecampaign
-      let preppedData = { "field[2]": data.projectStart, ...data };
-
-      //Remove the old custom field (renamed above)
-      const { custom, ...cleaned } = preppedData;
-
-      //Convert to FormData
-      let form_data = new FormData();
-      for (let key in cleaned) {
-        form_data.append(key, cleaned[key]);
-      }
-
       fetch("https://mariname86.activehosted.com/proc.php", {
         method: "POST",
         mode: "no-cors",
         cache: "no-cache",
-        body: form_data,
+        body: data,
       });
     } catch (error) {
       // handle server errors
@@ -81,12 +69,6 @@ export default function ActiveCampForm({ custom, showPhone, requirePhone }) {
           type="hidden"
           name="v"
           value="2"
-          ref={register({ required: true })}
-        />
-        <input
-          type="hidden"
-          name="custom"
-          value={custom}
           ref={register({ required: true })}
         />
         <label className="_form-label">Full Name*</label>
