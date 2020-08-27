@@ -24,115 +24,129 @@ export default function ActiveCampForm() {
   };
 
   const showForm = (
-    <form
-      onSubmit={handleSubmit(onSubmit)}
-      method="post"
-      style={{ textAlign: "center" }}
-    >
-      <div className="_form_element _x32910573 _full_width _clear">
-        <div className="_form-title">Lets Talk!</div>
-      </div>
-      <div className="_form_element _x54527394 _full_width _clear">
-        <div className="_html-code">
-          <p>
-            Please check your email box after your submission for a comunitaction from us.
-          </p>
+    <form onSubmit={handleSubmit(onSubmit)} method="post">
+      <div className="form-group mb-2">
+        <div>
+          <div className="display-4" style={{ textAlign: "center" }}>
+            Lets Talk!
+          </div>
         </div>
-        <input
-          type="hidden"
-          name="u"
-          value="9"
-          ref={register({ required: true })}
-        />
-        <input
-          type="hidden"
-          name="f"
-          value="9"
-          ref={register({ required: true })}
-        />
-        <input type="hidden" name="s" ref={register({})} />
-        <input
-          type="hidden"
-          name="c"
-          value="0"
-          ref={register({ required: true })}
-        />
-        <input
-          type="hidden"
-          name="m"
-          value="0"
-          ref={register({ required: true })}
-        />
-        <input
-          type="hidden"
-          name="act"
-          value="sub"
-          ref={register({ required: true })}
-        />
-        <input
-          type="hidden"
-          name="v"
-          value="2"
-          ref={register({ required: true })}
-        />
-        <label className="_form-label">Full Name*</label>
-        <input
-          type="text"
-          placeholder="Name"
-          name="fullname"
-          ref={register({ required: true, maxLength: 80 })}
-        />
         <br />
-        <label className="_form-label">Email*</label>
-        <input
-          type="text"
-          placeholder="Email"
-          name="email"
-          ref={register({ required: true, pattern: /^\S+@\S+$/i })}
-        />
-        <br /> <label className="_form-label">Phone*</label>
-        <input
-          type="tel"
-          placeholder="Phone number"
-          name="phone"
-          ref={register({
-            required: true,
-            minLength: 6,
-            maxLength: 12,
-          })}
-        />
+        <div>
+          <div className="lead">
+            <p>
+              Please check your email box after submission for a comunitaction
+              <br />
+               from us.
+            </p>
+          </div>
+          <input
+            type="hidden"
+            name="u"
+            value="9"
+            ref={register({ required: true })}
+          />
+          <input
+            type="hidden"
+            name="f"
+            value="9"
+            ref={register({ required: true })}
+          />
+          <input type="hidden" name="s" ref={register({})} />
+          <input
+            type="hidden"
+            name="c"
+            value="0"
+            ref={register({ required: true })}
+          />
+          <input
+            type="hidden"
+            name="m"
+            value="0"
+            ref={register({ required: true })}
+          />
+          <input
+            type="hidden"
+            name="act"
+            value="sub"
+            ref={register({ required: true })}
+          />
+          <input
+            type="hidden"
+            name="v"
+            value="2"
+            ref={register({ required: true })}
+          />
+          <label className="col-sm-2 col-form-label">Full Name*</label>
+          <input
+            type="text"
+            placeholder="Name"
+            name="fullname"
+            className="col-sm-10"
+            ref={register({ required: true, maxLength: 80 })}
+          />
+          <br />
+          <label className="col-sm-2 col-form-label">Email*</label>
+          <input
+            type="text"
+            placeholder="Email"
+            name="email"
+            className="col-sm-10"
+            ref={register({ required: true, pattern: /^\S+@\S+$/i })}
+          />
+          <br /> <label className="col-sm-2 col-form-label">Phone*</label>
+          <input
+            type="tel"
+            placeholder="Phone number"
+            name="phone"
+            className="col-sm-10"
+            ref={register({
+              required: true,
+              minLength: 6,
+              maxLength: 12,
+            })}
+          />
+          <br />
+          <label className="col-sm-2 col-form-label">Message</label>
+          <textarea
+            type="textArea"
+            name="message"
+            placeholder="What we should know?"
+            className="col-sm-10"
+            ref={register}
+          />
+          <br />
+          <label className="col-sm-2 col-form-label">Project Start*</label>
+          <select name="projectStart" className="col-sm-10" ref={register}>
+            <option value=""></option>
+            <option value="immediately">immediately</option>
+            <option value="in 3-6 weeks">in 3-6 weeks</option>
+            <option value="in 3 months or later">in 3 months or later</option>
+          </select>
+          <br />
+          <label className="col-sm-2 col-form-label">Project Budget</label>
+          <input
+            type="text"
+            name="field[1]"
+            className="col-sm-10"
+            ref={register}
+          />
+          <br />
+          <label className="col-sm-2 col-form-label">Company Size</label>
+          <select name="field[3]" className="col-sm-10" ref={register}>
+            <option value=""></option>
+            <option value="1-10 worker">1-10 worker</option>
+            <option value="11-50 worker">11-50 worker</option>
+            <option value="51-500 worker">51-500 worker</option>
+            <option value="500+ worker">500+ worker</option>
+          </select>
+          <div className="_form-thank-you"></div>
+        </div>
         <br />
-        <label className="_form-label">Message</label>
-        <textarea
-          type="textArea"
-          name="message"
-          placeholder="What we should know?"
-          ref={register}
-        />
-        <br />
-        <label className="_form-label">Project Start*</label>
-        <select name="projectStart" ref={register}>
-          <option value=""></option>
-          <option value="immediately">immediately</option>
-          <option value="in 3-6 weeks">in 3-6 weeks</option>
-          <option value="in 3 months or later">in 3 months or later</option>
-        </select>
-        <br />
-        <label className="_form-label">Project Budget</label>
-        <input type="text" name="field[1]" ref={register} />
-        <br />
-        <label className="_form-label">Company Size</label>
-        <select name="field[3]" ref={register}>
-          <option value=""></option>
-          <option value="1-10 worker">1-10 worker</option>
-          <option value="11-50 worker">11-50 worker</option>
-          <option value="51-500 worker">51-500 worker</option>
-          <option value="500+ worker">500+ worker</option>
-        </select>
-        <div className="_form-thank-you"></div>
+        <div style={{ textAlign: "center" }}>
+          <input type="submit" value="submit" className="btn btn-primary" />
+        </div>
       </div>
-
-      <input type="submit" value="submit" />
     </form>
   );
 
@@ -162,7 +176,7 @@ export default function ActiveCampForm() {
  #_form_9_ ._form-content-right { margin-left:164px; }
  #_form_9_ ._form-branding { color:#fff; font-size:10px; clear:both; text-align:left; margin-top:30px; font-weight:100; }
  #_form_9_ ._form-branding ._logo { display:block; width:130px; height:14px; margin-top:6px; background-image:url('https://d226aj4ao1t61q.cloudfront.net/hh9ujqgv5_aclogo_li.png'); background-size:130px auto; background-repeat:no-repeat; }
- #_form_9_ ._form-label,#_form_9_ ._form_element ._form-label { font-weight:bold; margin-bottom:5px; display:block; }
+ #_form_9_ .col-sm-2 col-form-label,#_form_9_ ._form_element ._form-label { font-weight:bold; margin-bottom:5px; display:block; }
  #_form_9_._dark ._form-branding { color:#333; }
  #_form_9_._dark ._form-branding ._logo { background-image:url('https://d226aj4ao1t61q.cloudfront.net/jftq2c8s_aclogo_dk.png'); }
  #_form_9_ ._form_element { position:relative; margin-bottom:10px; font-size:0; max-width:100%; }
