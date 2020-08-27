@@ -117,7 +117,11 @@ export default function ActiveCampForm() {
           />
           <br />
           <label className="col-sm-2 col-form-label">Project Start*</label>
-          <select name="projectStart" className="col-sm-10" ref={register}>
+          <select
+            name="projectStart"
+            className="col-sm-10"
+            ref={register({ required: true })}
+          >
             <option value=""></option>
             <option value="immediately">immediately</option>
             <option value="in 3-6 weeks">in 3-6 weeks</option>
