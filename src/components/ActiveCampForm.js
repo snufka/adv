@@ -103,7 +103,6 @@ export default function ActiveCampForm() {
             ref={register({
               required: true,
               minLength: 6,
-              maxLength: 12,
             })}
           />
           <br />
