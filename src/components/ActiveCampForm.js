@@ -7,15 +7,44 @@ export default function ActiveCampForm() {
   const onSubmit = (data) => {
     console.log(data);
     try {
+      let preppedData = {
+        "field[2]": data.projectStart,
+
+        "field[1]": data.budget,
+
+        "field[3]": data.companySize,
+
+        "field[4]": data.message,
+
+        ...data,
+      };
+
+      const {
+        projectStart,
+
+        budget,
+
+        companySize,
+
+        message,
+
+        ...cleaned
+      } = preppedData;
+
       let form_data = new FormData();
-      for (let key in data) {
-        form_data.append(key, data[key]);
+
+      for (let key in cleaned) {
+        form_data.append(key, cleaned[key]);
       }
-      fetch("https://mariname86.activehosted.com/proc.php", {
+
+      const queryString = new URLSearchParams(form_data).toString();
+
+      fetch(`https://mariname86.activehosted.com/proc.php?${queryString}`, {
         method: "POST",
+
         mode: "no-cors",
+
         cache: "no-cache",
-        body: form_data,
       });
     } catch (error) {
       // handle server errors
@@ -130,13 +159,13 @@ export default function ActiveCampForm() {
           <label className="col-sm-2 col-form-label">Project Budget</label>
           <input
             type="text"
-            name="field[1]"
+            name="budget"
             className="col-sm-10"
             ref={register}
           />
           <br />
           <label className="col-sm-2 col-form-label">Company Size</label>
-          <select name="field[3]" className="col-sm-10" ref={register}>
+          <select name="companySize" className="col-sm-10" ref={register}>
             <option value=""></option>
             <option value="1-10 worker">1-10 worker</option>
             <option value="11-50 worker">11-50 worker</option>
